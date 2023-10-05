@@ -11,7 +11,7 @@ function Home() {
   const [cards, setCards] = useState([])
 
   const fetchCardsData = () => {
-    fetch("http://localhost:3000/cards")
+    fetch("https://uninter-bd.vercel.app/cards")
       .then(response => {
         return response.json()
       })
